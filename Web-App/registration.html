@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber - Registration</title>
+    <link rel="stylesheet" href="auth.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Cyber</a>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="user-nav">
+                <a href="wishlist.html" aria-label="View your wishlist"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="far fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="login-container">
+        <h2>Регистрация</h2>
+        <form name="registration" class="login-form">
+          <input name="name" type="text" placeholder="Имя" required />
+          <input name="surname" type="text" placeholder="Фамилия" required />
+          <input name="email" type="email" placeholder="Почта (будет вашим логином)" required />
+          <input name="password" type="password" placeholder="Придумайте пароль" required />
+          <input name="phone" value="+7" type="text" placeholder="Номер телефона" required />
+          <p id="message"></p>
+          <a href="login.html">Уже есть аккаунт? Войти</a>
+          <button type="submit" class="btn btn-dark">Зарегистрироваться</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Скопируйте сюда ваш footer из index.html -->
+    </footer>
+
+    <script src="auth.js"></script>
+</html>
