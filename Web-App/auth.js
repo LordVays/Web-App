@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const foundUser = users.find(user => user.email === login && user.password === password);
 
             if (foundUser) {
-                alert(`Добро пожаловать, ${foundUser.name}!`);
                 document.location.href = "index.html";
             } else {
                 messageEl.textContent = "Неправильный логин или пароль.";

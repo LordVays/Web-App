@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - Product Details</title>
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Cyber</a>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+            </nav>
+
+            <div class="user-nav">
+                <a href="wishlist.html" aria-label="View your wishlist"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="./login.html"><i class="far fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> > 
+            <a href="#">Catalog</a> > 
+            <a href="#">Smartphones</a> > 
+            <span id="breadcrumb-product-name">Product</span>
+        </div>
+
+        <section class="product-main-section">
+            <div class="product-gallery">
+                <img id="main-product-image" src="https://placehold.co/500x500/f0f0f0/333?text=Product" alt="Product Image" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="https://placehold.co/100x100/f0f0f0/333?text=1" alt="" class="thumbnail active">
+                    <img src="https://placehold.co/100x100/e0e0e0/333?text=2" alt="" class="thumbnail">
+                    <img src="https://placehold.co/100x100/d0d0d0/333?text=3" alt="" class="thumbnail">
+                    <img src="https://placehold.co/100x100/c0c0c0/333?text=4" alt="" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1 id="product-name">Product Name</h1>
+                <div class="price-section">
+                    <span id="product-price" class="current-price">$1399</span>
+                    <span class="original-price">$1499</span>
+                </div>
+                
+                <div class="selector">
+                    <p>Select color:</p>
+                    <div class="color-options">
+                        <span class="color-circle" style="background-color: #000000;"></span>
+                        <span class="color-circle active" style="background-color: #582A94;"></span>
+                        <span class="color-circle" style="background-color: #FF0000;"></span>
+                        <span class="color-circle" style="background-color: #FFD700;"></span>
+                        <span class="color-circle" style="background-color: #F5F5F5;"></span>
+                    </div>
+                </div>
+
+                <div class="selector">
+                    <p>Select storage:</p>
+                    <div class="storage-options">
+                        <button class="storage-btn">128GB</button>
+                        <button class="storage-btn">256GB</button>
+                        <button class="storage-btn">512GB</button>
+                        <button class="storage-btn active">1TB</button>
+                    </div>
+                </div>
+                
+                <p class="product-description">
+                    Enhanced capabilities thanks to an enlarged display of 6.7 inches and work without recharging throughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras.
+                </p>
+
+                <div class="action-buttons">
+                    <button class="btn btn-outline-dark">Add to Wishlist</button>
+                    <button class="btn btn-dark">Add to Cart</button>
+                </div>
+
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <p>Free Delivery</p>
+                            <span>1-2 day</span>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-store"></i>
+                        <div>
+                            <p>In Stock</p>
+                            <span>Today</span>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <p>Guaranteed</p>
+                            <span>1 year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details-section">
+            <h2>Details</h2>
+        </section>
+
+        <section class="reviews-section">
+             <h2>Reviews</h2>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-grid">
+                 <div class="product-card">
+                    <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
+                    <img src="./images/Iphone14proGold.svg" alt="Apple iPhone 14 Pro 512GB Gold">
+                    <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
+                    <p class="price">$1437</p>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
+                </div>
+
+                <div class="product-card">
+                    <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
+                    <img src="./images/airpodsMax.svg" alt="AirPods Max Silver">
+                    <h3>AirPods Max Silver Starlight Aluminium</h3>
+                    <p class="price">$549</p>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
+                </div>
+          
+                <div class="product-card">
+                    <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
+                    <img src="./images/applewatch9.svg" alt="Apple Watch Series 9 GPS">
+                    <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+                    <p class="price">$399</p>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
+                </div>
+               
+                <div class="product-card">
+                    <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
+                    <img src="./images/Iphone14proWhite.svg" alt="Apple iPhone 14 Pro 1TB White">
+                    <h3>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h3>
+                    <p class="price">$1499</p>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo">Cyber</a>
+                <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Bonus program</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Credit and payment</a></li>
+                    <li><a href="#">Service contracts</a></li>
+                    <li><a href="#">Non-cash account</a></li>
+                    <li><a href="#">Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Assistance to the buyer</h4>
+                <ul>
+                    <li><a href="#">Find an order</a></li>
+                    <li><a href="#">Terms of delivery</a></li>
+                    <li><a href="#">Exchange and return of goods</a></li>
+                    <li><a href="#">Guarantee</a></li>
+                    <li><a href="#">Frequently asked questions</a></li>
+                    <li><a href="#">Terms of use of the site</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="script.js"></script>
+</html>

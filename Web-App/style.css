@@ -111,8 +111,7 @@ ul {
   gap: 30px;
 }
 
-.main-nav a,
-.user-nav a {
+.main-nav a, .user-nav a {
   font-size: 16px;
   font-weight: 400;
   transition: color 0.3s ease;
@@ -183,8 +182,203 @@ ul {
   color: #fff;
 }
 
-.category-section,
-.products-section {
+.banner-slider {
+    position: relative;
+    overflow: hidden;
+    background-color: #111;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15%;
+    color: #fff;
+    box-sizing: border-box; 
+}
+
+.slider-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.prev-btn {
+    left: 30px;
+}
+
+.next-btn {
+    right: 30px;
+}
+
+.banner-content, .banner-photo img {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.slide.active .banner-content {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fade-in-up 0.8s ease 0.2s forwards;
+}
+
+.slide.active .banner-photo img {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fade-in-up 0.8s ease 0.4s forwards;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-content {
+  text-align: left;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.banner-title {
+  font-size: 100px;
+  font-weight: 300;
+  margin: 10px 0;
+  line-height: 1.1;
+}
+
+.banner-title strong {
+  font-weight: 700;
+}
+
+.banner-description {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.banner-photo {
+  margin-left: 200px;
+}
+
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.showcase-item {
+  padding: 40px;
+  border-radius: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-item h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.showcase-item h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.showcase-item h3 strong {
+  font-weight: 700;
+}
+
+.showcase-item p {
+  max-width: 300px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.showcase-item .btn {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.item-ps5 {
+  background-color: #000;
+  background-image: url('https://placehold.co/300x300/000000/000000?text=+');
+  background-position: right center;
+  color: #fff;
+}
+
+.item-ps5 .showcase-content, .item-macbook-air .showcase-content, .item-vision-pro .showcase-content, .item-airpods .showcase-content {
+  display: flex;
+}
+
+.item-vision-pro .showcase-content div img, .item-airpods .showcase-content div img  {
+  padding-right: 120px;
+}
+
+.item-macbook-air {
+  background-color: #f5f5f5;
+  background-image: url('https://placehold.co/300x250/f5f5f5/f5f5f5?text=+');
+  background-position: right bottom;
+}
+
+.item-airpods {
+  background-color: #f5f5f5;
+  background-image: url('https://placehold.co/250x250/f5f5f5/f5f5f5?text=+');
+  background-position: left center;
+}
+
+.item-vision-pro {
+  background-color: #000;
+  background-image: url('https://placehold.co/250x150/000000/000000?text=+');
+  background-position: left center;
+  color: #fff;
+}
+
+.item-vision-pro .showcase-content {
+  margin-left: auto;
+  text-align: right;
+}
+
+.item-airpods .showcase-content {
+  margin-left: auto;
+  text-align: left;
+}
+
+.category-section .products-section {
   padding: 80px 0;
 }
 
@@ -210,6 +404,7 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .category-card {
@@ -299,124 +494,7 @@ ul {
 
 .product-grid-container.active {
   display: block;
-}
-
-.hero {
-  height: 70vh;
-  background-color: #111;
-  background-image: url('https://placehold.co/1920x700/111111/111111?text=+');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 15%;
-  color: #fff;
-}
-
-.hero-content {
-  text-align: left;
-}
-
-.hero-subtitle {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.hero-title {
-  font-size: 100px;
-  font-weight: 300;
-  margin: 10px 0;
-  line-height: 1.1;
-}
-
-.hero-title strong {
-  font-weight: 700;
-}
-
-.hero-description {
-  font-size: 18px;
-  font-weight: 300;
   margin-bottom: 30px;
-}
-
-.showcase-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 50px;
-}
-
-.showcase-item {
-  padding: 40px;
-  border-radius: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.showcase-item h2 {
-  font-size: 40px;
-  font-weight: 300;
-}
-
-.showcase-item h3 {
-  font-size: 32px;
-  font-weight: 300;
-}
-
-.showcase-item h3 strong {
-  font-weight: 700;
-}
-
-.showcase-item p {
-  max-width: 300px;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-.showcase-item .btn {
-  margin-top: 20px;
-  align-self: flex-start;
-}
-
-.item-ps5 {
-  background-color: #000;
-  background-image: url('https://placehold.co/300x300/000000/000000?text=+');
-  background-position: right center;
-  color: #fff;
-}
-
-.item-macbook-air {
-  background-color: #f5f5f5;
-  background-image: url('https://placehold.co/300x250/f5f5f5/f5f5f5?text=+');
-  background-position: right bottom;
-}
-
-.item-airpods {
-  background-color: #f5f5f5;
-  background-image: url('https://placehold.co/250x250/f5f5f5/f5f5f5?text=+');
-  background-position: left center;
-}
-
-.item-vision-pro {
-  background-color: #000;
-  background-image: url('https://placehold.co/250x150/000000/000000?text=+');
-  background-position: left center;
-  color: #fff;
-}
-
-.item-vision-pro .showcase-content {
-  margin-left: auto;
-  text-align: right;
-}
-
-.item-airpods .showcase-content {
-  margin-left: auto;
-  text-align: left;
 }
 
 .tabs {

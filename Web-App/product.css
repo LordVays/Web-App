@@ -1,0 +1,408 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ffffff; 
+    color: #1C1C1C; 
+}
+
+.container { 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+ul { 
+    list-style: none; 
+    padding: 0;
+}
+
+.btn { 
+    padding: 12px 30px; 
+    border: 1px solid transparent; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.btn-outline-dark { 
+    border: 1px solid #000; 
+    background-color: transparent; 
+    color: #000; 
+}
+
+.btn-outline-dark:hover { 
+    background-color: #000; 
+    color: #fff; 
+}
+
+.btn-dark { 
+    background-color: #000; 
+    color: #fff; 
+    border: 1px solid #000; 
+}
+
+.btn-dark:hover { 
+    background-color: #333; 
+    border-color: #333; 
+}
+
+.header { 
+    background-color: #fff; 
+    padding: 20px 0; 
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+.header-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo { 
+    font-size: 28px; 
+    font-weight: 600; 
+}
+
+.search-bar { 
+    position: relative; 
+    width: 350px; 
+}
+
+.search-bar input { 
+    width: 100%; 
+    padding: 12px 12px 12px 40px; 
+    border-radius: 8px; 
+    border: none; 
+    background-color: #f5f5f5; 
+    font-size: 16px; 
+}
+
+.search-bar .fa-search { 
+    position: absolute; 
+    top: 50%; 
+    left: 15px; 
+    transform: translateY(-50%); 
+    color: #888; 
+}
+
+.main-nav, .user-nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.main-nav a, .user-nav a { 
+    font-size: 16px; 
+    font-weight: 400; 
+    transition: color 0.3s ease; 
+}
+
+.main-nav a:hover { 
+    color: #888; 
+}
+
+.user-nav a { 
+    font-size: 20px; 
+}
+
+.footer { 
+    background-color: #111; 
+    color: #a0a0a0; 
+    padding: 80px 0;
+    margin-top: 60px;
+}
+
+.footer-container { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 60px; 
+}
+
+.footer .logo { 
+    color: #fff; 
+    margin-bottom: 20px; 
+    display: block; 
+}
+
+.footer-about p { 
+    line-height: 1.7; 
+    margin-bottom: 20px; 
+}
+
+.social-icons { 
+    display: flex; 
+    gap: 20px; 
+}
+
+.social-icons a { 
+    font-size: 20px; 
+    color: #a0a0a0; 
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover { 
+    color: #fff; 
+}
+
+.footer-links h4 { 
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: 600; 
+    margin-bottom: 25px; 
+}
+
+.footer-links ul li { 
+    margin-bottom: 15px; 
+}
+
+.footer-links ul li a:hover { 
+    color: #fff; 
+}
+
+.breadcrumbs {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.breadcrumbs a {
+    color: #555;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.product-main-section {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.thumbnail.active, .thumbnail:hover {
+    border-color: #000;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.price-section {
+    margin-bottom: 25px;
+}
+
+.current-price {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1C1C1C;
+    margin-right: 15px;
+}
+
+.original-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.selector {
+    margin-bottom: 25px;
+}
+
+.selector p {
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    outline: 1px solid #ddd;
+    transition: all 0.2s;
+}
+
+.color-circle.active {
+    border-color: #000;
+}
+
+.storage-options {
+    display: flex;
+    gap: 10px;
+}
+
+.storage-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.storage-btn.active, .storage-btn:hover {
+    border-color: #000;
+    background-color: #f7f7f7;
+}
+
+.product-description {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.action-buttons .btn {
+    flex-grow: 1;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.info-box i {
+    font-size: 24px;
+    color: #555;
+}
+
+.info-box p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.info-box span {
+    font-size: 14px;
+    color: #888;
+}
+
+.details-section, .reviews-section, .related-products {
+    margin-bottom: 60px;
+}
+
+.details-section h2, .reviews-section h2, .related-products h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.product-card { 
+    background-color: #f7f7f7; 
+    border-radius: 12px; 
+    padding: 20px; 
+    text-align: center; 
+    position: relative; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.product-card:hover { 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+}
+
+.wishlist-icon { 
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    font-size: 20px; 
+    color: #aaa; 
+}
+
+.wishlist-icon:hover { 
+    color: #e53935; 
+}
+
+.wishlist-icon.active .fa-heart { 
+    color: #e53935; 
+    font-weight: 900; 
+}
+
+.product-card img { 
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.product-card h3 { 
+    font-size: 16px; 
+    font-weight: 500; 
+    min-height: 48px; 
+    margin-bottom: 10px; 
+}
+
+.product-card .price { 
+    font-size: 22px; 
+    font-weight: 600; 
+    margin-bottom: 20px; 
+}

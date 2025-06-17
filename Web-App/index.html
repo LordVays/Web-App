@@ -35,42 +35,100 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <p class="hero-subtitle">Pro.Beyond.</p>
-                <h1 class="hero-title">IPhone 14 <strong>Pro</strong></h1>
-                <p class="hero-description">Created to change everything for the better. For everyone</p>
-                <button class="btn btn-outline">Shop Now</button>
+        <section class="banner-slider">
+            <div class="slider-wrapper">
+                <div class="slide">
+                    <div class="banner-content">
+                        <p class="banner-subtitle">Pro.Beyond.</p>
+                        <h1 class="banner-title">IPhone 14 <strong>Pro</strong></h1>
+                        <p class="banner-description">Created to change everything for the better. For everyone</p>
+                        <button class="btn btn-outline">Shop Now</button>
+                    </div>
+                    <div class="banner-photo">
+                        <img src="./images/IphoneImage.svg" alt="iPhone 14 Pro">
+                    </div>
+                </div>
+
+                <div class="slide">
+                     <div class="banner-content">
+                        <p class="banner-subtitle">Incredible Power</p>
+                        <h1 class="banner-title">Samsung Galaxy <strong>S25 Ultra</strong></h1>
+                        <p class="banner-description">Experience lightning-fast loading with an ultra-high-speed SSD.</p>
+                        <button class="btn btn-outline">Explore Games</button>
+                    </div>
+                    <div class="banner-photo">
+                         <img src="./images/samsungGalaxy.svg" alt="Samsung Galaxy" style="width: 600px; margin-right: 250px;">
+                    </div>
+                </div>
+
+                 <div class="slide">
+                     <div class="banner-content">
+                        <p class="banner-subtitle">Light. Speed.</p>
+                        <h1 class="banner-title">Macbook Air <strong>14 Pro</strong></h1>
+                        <p class="banner-description">The new M3 chip makes the 15-inch MacBook Air incredibly fast.</p>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                    <div class="banner-photo">
+                        <img src="./images/Macbook1.svg" alt="Macbook Air" style="width: 600px; margin-right: 250px;">
+                    </div>
+                </div>
             </div>
+
+            <button class="slider-nav-btn prev-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-nav-btn next-btn" id="next-btn"><i class="fas fa-chevron-right"></i></button>
         </section>
 
         <section class="showcase-grid container">
             <div class="showcase-item item-ps5">
                 <div class="showcase-content">
-                    <h2>Playstation 5</h2>
-                    <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+                    <div>
+                        <img src="./images/PlayStation.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h2>Playstation 5</h2>
+                        <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="showcase-item item-macbook-air">
                 <div class="showcase-content">
-                    <h2>Macbook Air</h2>
-                    <p>The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
-                    <button class="btn btn-outline-dark">Shop Now</button>
+                    <div>
+                        <h2>Macbook Air</h2>
+                        <p>The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+                        <button class="btn btn-outline-dark">Shop Now</button>
+                    </div>
+
+                    <div>
+                        <img src="./images/MacBookPro14.svg" alt="">
+                    </div>
                 </div>
             </div>
 
             <div class="showcase-item item-airpods">
                 <div class="showcase-content">
-                    <h3>Apple AirPods <strong>Max</strong></h3>
-                    <p>Computational audio. Listen, it’s powerful</p>
+                    <div>
+                        <img src="./images/airpodsMax.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h3>Apple AirPods <strong>Max</strong></h3>
+                        <p>Computational audio. Listen, it’s powerful</p>
+                    </div>
                 </div>
             </div>
 
             <div class="showcase-item item-vision-pro">
                  <div class="showcase-content dark-text">
-                    <h3>Apple Vision <strong>Pro</strong></h3>
-                    <p>An immersive way to experience entertainment</p>
+                    <div>
+                        <img src="./images/vision.svg" alt="">
+                    </div>
+
+                    <div>
+                        <h3>Apple Vision <strong>Pro</strong></h3>
+                        <p>An immersive way to experience entertainment</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,66 +187,66 @@
                 <div class="product-grid">
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=iPhone+14" alt="Apple iPhone 14 Pro Max">
+                        <img src="./images/Iphone14pro1.svg" alt="Apple iPhone 14 Pro Max">
                         <h3>Apple iPhone 14 Pro Max 128GB Deep Purple</h3>
                         <p class="price">$900</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Camera" alt="Blackmagic Pocket Cinema Camera 6k">
+                        <img src="./images/camera6k.svg" alt="Blackmagic Pocket Cinema Camera 6k">
                         <h3>Blackmagic Pocket Cinema Camera 6k</h3>
                         <p class="price">$2535</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Apple+Watch" alt="Apple Watch Series 9 GPS">
+                        <img src="./images/applewatch9.svg" alt="Apple Watch Series 9 GPS">
                         <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
                         <p class="price">$399</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=AirPods" alt="AirPods Max Silver">
+                        <img src="./images/airpodsMax.svg" alt="AirPods Max Silver">
                         <h3>AirPods Max Silver Starlight Aluminium</h3>
                         <p class="price">$549</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Galaxy+Watch" alt="Samsung Galaxy Watch6 Classic 47mm Black">
+                        <img src="./images/samsungwatch47.svg" alt="Samsung Galaxy Watch6 Classic 47mm Black">
                         <h3>Samsung Galaxy Watch6 Classic 47mm Black</h3>
                         <p class="price">$369</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="fas fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Z+Fold" alt="Galaxy Z Fold5 Unlocked">
+                        <img src="./images/galaxyZFold.svg" alt="Galaxy Z Fold5 Unlocked">
                         <h3>Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h3>
                         <p class="price">$1799</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Galaxy+Buds" alt="Galaxy Buds FE Graphite">
+                        <img src="./images/galaxybuds.svg" alt="Galaxy Buds FE Graphite">
                         <h3>Galaxy Buds FE Graphite</h3>
                         <p class="price">$99.99</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=iPad+9" alt="Apple iPad 9 10.2">
+                        <img src="./images/ipad9.svg" alt="Apple iPad 9 10.2">
                         <h3>Apple iPad 9 10.2” 64GB Wi-Fi Silver (MK2L3) 2021</h3>
                         <p class="price">$398</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -200,39 +258,39 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=PS5" alt="PlayStation 5">
                         <h3>Sony PlayStation 5 Console (Slim)</h3>
                         <p class="price">$499</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=AirPods+Pro" alt="AirPods Pro 2">
+                        <img src="./images/airpodsMax.svg" alt="AirPods Pro 2">
                         <h3>Apple AirPods Pro (2nd generation)</h3>
                         <p class="price">$249</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=MacBook+Air" alt="MacBook Air M2">
+                        <img src="" alt="MacBook Air M2">
                         <h3>Apple MacBook Air 13" M2 Chip, Midnight</h3>
                         <p class="price">$999</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=iPhone+15" alt="iPhone 15">
+                        <img src="./images/Iphone14pro1.svg" alt="iPhone 15">
                         <h3>Apple iPhone 15 128GB, Blue</h3>
                         <p class="price">$799</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Galaxy+S23" alt="Samsung Galaxy S23">
+                        <img src="./images/samsungGalaxy.svg" alt="Samsung Galaxy S23">
                         <h3>Samsung Galaxy S23 128GB, Phantom Black</h3>
                         <p class="price">$699</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -240,7 +298,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Sony+XM5" alt="Sony WH-1000XM5">
                         <h3>Sony WH-1000XM5 Wireless Headphones</h3>
                         <p class="price">$399</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -248,7 +306,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Switch+OLED" alt="Nintendo Switch OLED">
                         <h3>Nintendo Switch – OLED Model</h3>
                         <p class="price">$349</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -256,7 +314,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=iMac" alt="Apple iMac">
                         <h3>Apple iMac 24" M3 Chip, Silver</h3>
                         <p class="price">$1299</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -268,7 +326,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Vision+Pro" alt="Apple Vision Pro">
                         <h3>Apple Vision Pro 256GB</h3>
                         <p class="price">$3499</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -276,7 +334,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=MacBook+Pro+16" alt="MacBook Pro 16">
                         <h3>Apple MacBook Pro 16" M3 Max Chip</h3>
                         <p class="price">$3499</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -284,7 +342,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Pixel+8+Pro" alt="Google Pixel 8 Pro">
                         <h3>Google Pixel 8 Pro 256GB, Porcelain</h3>
                         <p class="price">$1099</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -292,7 +350,7 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=DJI+Drone" alt="DJI Mavic 3 Pro">
                         <h3>DJI Mavic 3 Pro Drone</h3>
                         <p class="price">$2199</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -300,15 +358,15 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Surface+Laptop" alt="Microsoft Surface Laptop Studio">
                         <h3>Microsoft Surface Laptop Studio 2</h3>
                         <p class="price">$1999</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=GoPro+12" alt="GoPro HERO12">
+                        <img src="https://placehold.co/200x200/f0f0f0/333?text=GoPro+12" alt="GoPro banner12">
                         <h3>GoPro HERO12 Black Action Camera</h3>
                         <p class="price">$399</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
 
                     <div class="product-card">
@@ -316,15 +374,15 @@
                         <img src="https://placehold.co/200x200/f0f0f0/333?text=Kindle" alt="Kindle Scribe">
                         <h3>Amazon Kindle Scribe (32 GB)</h3>
                         <p class="price">$389</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
   
                     <div class="product-card">
                         <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                        <img src="https://placehold.co/200x200/f0f0f0/333?text=Apple+Watch+Ultra" alt="Apple Watch Ultra 2">
+                        <img src="./images/applewatch9.svg" alt="Apple Watch Ultra 2">
                         <h3>Apple Watch Ultra 2 GPS + Cellular</h3>
                         <p class="price">$799</p>
-                        <button class="btn btn-dark">Buy Now</button>
+                        <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                     </div>
                 </div>
             </div>
@@ -333,14 +391,14 @@
         
         <section class="feature-section container">
             <div class="feature-block light-bg">
-                <img src="https://placehold.co/500x400/eeeeee/333?text=Popular+Products" alt="Popular Products">
+                <img src="./images/popularPr.svg" alt="Popular Products">
                 <h2>Popular Products</h2>
                 <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
                 <button class="btn btn-outline-dark">Shop Now</button>
             </div>
 
             <div class="feature-block light-bg">
-                <img src="https://placehold.co/500x400/eeeeee/333?text=iPad+Pro" alt="iPad Pro">
+                <img src="./images/ipadPro.svg" alt="iPad Pro">
                 <h2>Ipad Pro</h2>
                 <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
                 <button class="btn btn-outline-dark">Shop Now</button>
@@ -349,14 +407,14 @@
         
         <section class="feature-section container">
              <div class="feature-block light-bg">
-                <img src="https://placehold.co/500x400/eeeeee/333?text=Samsung+Galaxy" alt="Samsung Galaxy">
+                <img src="./images/samsungGalaxy.svg" alt="Samsung Galaxy">
                 <h2>Samsung Galaxy</h2>
                 <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
                 <button class="btn btn-outline-dark">Shop Now</button>
             </div>
 
             <div class="feature-block dark-bg">
-                <img src="https://placehold.co/500x400/111111/fff?text=Macbook+Pro" alt="Macbook Pro">
+                <img src="./images/Macbook1.svg" alt="Macbook Pro">
                 <h2>Macbook Pro</h2>
                 <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
                 <button class="btn btn-outline">Shop Now</button>
@@ -371,34 +429,34 @@
             <div class="product-grid">
                 <div class="product-card">
                     <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                    <img src="https://placehold.co/200x200/f0f0f0/333?text=iPhone+Gold" alt="Apple iPhone 14 Pro 512GB Gold">
+                    <img src="./images/Iphone14proGold.svg" alt="Apple iPhone 14 Pro 512GB Gold">
                     <h3>Apple iPhone 14 Pro 512GB Gold (MQ233)</h3>
                     <p class="price">$1437</p>
-                    <button class="btn btn-dark">Buy Now</button>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                 </div>
 
                 <div class="product-card">
                     <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                    <img src="https://placehold.co/200x200/f0f0f0/333?text=AirPods+Max" alt="AirPods Max Silver">
+                    <img src="./images/airpodsMax.svg" alt="AirPods Max Silver">
                     <h3>AirPods Max Silver Starlight Aluminium</h3>
                     <p class="price">$549</p>
-                    <button class="btn btn-dark">Buy Now</button>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                 </div>
           
                 <div class="product-card">
                     <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                    <img src="https://placehold.co/200x200/f0f0f0/333?text=Apple+Watch" alt="Apple Watch Series 9 GPS">
+                    <img src="./images/applewatch9.svg" alt="Apple Watch Series 9 GPS">
                     <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
                     <p class="price">$399</p>
-                    <button class="btn btn-dark">Buy Now</button>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                 </div>
                
                 <div class="product-card">
                     <a href="#" class="wishlist-icon wishlist-btn"><i class="far fa-heart"></i></a>
-                    <img src="https://placehold.co/200x200/f0f0f0/333?text=iPhone+White" alt="Apple iPhone 14 Pro 1TB Gold">
+                    <img src="./images/Iphone14proWhite.svg" alt="Apple iPhone 14 Pro 1TB White">
                     <h3>Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h3>
                     <p class="price">$1499</p>
-                    <button class="btn btn-dark">Buy Now</button>
+                    <a href="#" class="btn btn-dark buy-now-link">Buy Now</a>
                 </div>
             </div>
         </section>
@@ -416,7 +474,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-about">
-                <a href="#" class="logo">cyber</a>
+                <a href="#" class="logo">Cyber</a>
                 <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
 
                 <div class="social-icons">
