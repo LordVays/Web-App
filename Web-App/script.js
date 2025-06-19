@@ -265,3 +265,109 @@ document.addEventListener('DOMContentLoaded', function() {
     updateWishlistIcons();
 
 });
+
+let products = [
+
+    JSON.parse(localStorage.getItem("product")) || [],
+
+];
+
+let cards = document.getElementById("product-card");
+
+for (let i = 0; i < products.length; i++) {
+    
+    let card = document.createElement("div");
+    card.className = "card";
+
+    let cardTop = document.createElement("div");
+    cardTop.className = "card__top";
+
+    card.appendChild(cardTop);
+
+    
+    let a = document.createElement("a");
+    a.className = "card__image";
+
+    cardTop.appendChild(a);
+
+
+    let img = document.createElement("img");
+    img.src = products[i].image;
+    
+    a.appendChild(img);
+
+    
+    let label = document.createElement("div");
+    label.className = "card__label";
+    label.innerText = products[i].sale;
+
+    cardTop.appendChild(label);
+
+
+    let bottom = document.createElement("div");
+    bottom.className = "card__bottom";
+
+    card.appendChild(bottom);
+
+
+    let prices = document.createElement("div");
+    prices.className = "card__prices";
+
+    let oldPrice = document.createElement("div");
+    oldPrice.className = "card__price";
+    oldPrice.className = "card__price--discount";
+    oldPrice.innerText = products[i].oldPrice;
+
+    let newPrice = document.createElement("div");
+    newPrice.className = "card__price";
+    newPrice.className = "card__price--common";
+    newPrice.innerText = products[i].price;
+
+    prices.appendChild(oldPrice);
+    prices.appendChild(newPrice);
+
+    bottom.appendChild(prices);
+
+
+    let aTitle = document.createElement("a");
+    aTitle.className = "card__title";
+    aTitle.innerText = products[i].title;
+
+    bottom.appendChild(aTitle);
+
+    let likeBtn = document.createElement("img");
+    likeBtn.className = "card__like";
+    likeBtn.style.position = "absolute";
+    likeBtn.style.fontSize = "20px";
+    likeBtn.src = products.like ? "https://www.citypng.com/photo/18673/download-flat-red-like-heart-icon-silhouette-png" : "https://www.pngwing.com/ru/free-png-ablye";
+
+    likeBtn.addEventListener('click', () => {
+        products.like = !products.like;
+    })
+
+    cardTop.appendChild(likeBtn);
+
+
+    let button = document.createElement("button");
+    button.className = "card__add";
+    button.innerText = "В корзину";
+
+    bottom.appendChild(button);
+
+
+    let deleteB = document.createElement("button");
+    deleteB.className = "card__del";
+    deleteB.innerText = "Удалить";
+
+
+    deleteB.addEventListener('click', () => {
+        card.remove();
+    })
+
+
+    bottom.appendChild(deleteB);
+
+    
+    cards.appendChild(card);
+
+}

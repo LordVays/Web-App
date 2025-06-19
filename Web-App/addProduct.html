@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cyber - Login</title>
-  <link rel="stylesheet" href="auth.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber - Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addProduct.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <header class="header">
         <div class="container header-container">
-            <a href="index.html" class="logo">Cyber</a>
+            <a href="./index.html" class="logo">Cyber</a>
+
             <div class="search-bar">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search">
             </div>
+
             <nav class="main-nav">
-                <a href="index.html">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact Us</a>
                 <a href="./addProduct.html">Add Product</a>
             </nav>
+
             <div class="user-nav">
                 <a href="wishlist.html" aria-label="View your wishlist"><i class="far fa-heart"></i></a>
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
@@ -31,16 +36,19 @@
     </header>
 
     <main>
-      <div class="login-container">
-        <h2>Авторизация</h2>
-        <form name="autorization" class="login-form">
-          <input name="login" type="text" placeholder="Логин (ваша почта)" required>
-          <input name="password" type="password" placeholder="Пароль" required>
-          <p id="message"></p>
-          <a href="registration.html">Нет аккаунта? Зарегистрироваться</a>
-          <button type="submit" class="btn btn-dark">Вход</button>
-        </form>
-      </div>
+        <div class="login-container">
+            <h2>Добавить товар</h2>
+
+            <form name="productsForm" class="login-form">
+                <input name="image" type="text" placeholder="Фото" required />
+                <input name="title" type="text" placeholder="Название" required />
+                <input name="price" type="text" placeholder="Цена" required />
+
+                <p id="message"></p>
+
+                <button type="submit" >Добавить товар</button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
@@ -85,6 +93,7 @@
         </div>
     </footer>
 
-    <script src="auth.js"></script>
 </body>
+    <script src="addProduct.js"></script>
+    <script src="script.js"></script>
 </html>
